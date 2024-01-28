@@ -135,3 +135,14 @@ footer a:hover {
 #playButton {
   margin-bottom: 30px;
 }
+#score-container {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #3498db;
+}
+
+#message-container {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #27ae60;
+}
