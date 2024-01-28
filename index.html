@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Font Awesome for icons -->
+    <title>EduFlex</title>
+  </head>
+  <body>
+    <div id="container-wrapper">
+      <div id="intro-container">
+        <img
+          src="https://assets-global.website-files.com/6053d0035c06201e6585a691/61a445fb30e19af3ba1acf88_2020-06_momemto-album-range_campaign_web-001.jpg"
+          alt="Quiz Image"
+        />
+        <h2>Welcome to EduFlex Quiz!</h2>
+        <p>
+          Test your knowledge in instructional design with this engaging quiz.
+        </p>
+      </div>
+
+      <div id="quiz-container">
+        <div id="question-container">
+          <p id="question-text"></p>
+        </div>
+        <div id="options-container">
+          <!-- Options will be dynamically added here using JavaScript -->
+        </div>
+        <div id="button-container">
+          <button id="prev-btn" onclick="prevQuestion()">
+            <i class="icon fas fa-chevron-left"></i>Previous
+          </button>
+          <button id="next-btn" onclick="nextQuestion()">
+            Next<i class="icon fas fa-chevron-right"></i>
+          </button>
+          <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="timer-container">
+          <i class="icon far fa-clock"></i> Time Left:
+          <span id="timer">60</span> seconds
+        </div>
+        <div id="score-container">
+          <i class="icon fas fa-star"></i> Your Score: <span id="score">0</span>
+        </div>
+        <div id="message-container"></div>
+      </div>
+    </div>
+    <!-- Background Music -->
+    <button id="playButton" onclick="toggleAudio()">
+      Play Music While Testing
+    </button>
+
+    <audio id="audioPlayer" controls>
+      <source
+        src="./assets/Short Meditation Music - 3 Minute Relaxation, Calming.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <!-- Footer -->
+    <footer>
+      Moayyad Saleh -
+      <a href="https://www.linkedin.com/in/moayyad-saleh/" target="_blank"
+        >LinkedIn Profile</a
+      >
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
