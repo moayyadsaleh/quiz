@@ -267,7 +267,7 @@ function submitQuiz() {
 
   const scoreContainer = document.getElementById("score-container");
   scoreContainer.style.display = "block";
-  scoreContainer.innerHTML = `Your Score: ${calculateScore()}`;
+  scoreContainer.innerHTML = `Your Score: ${calculateScore()} out of 15`;
 }
 
 function calculateScore() {
